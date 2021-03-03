@@ -1,0 +1,354 @@
+
+.mediaViewInfo {
+	--web-view-name: Web 1920 – 1;
+	--web-view-id: Web_1920__1;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Web_1920__1;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Web_1920__1 {
+	position: absolute;
+	width: 1527px;
+	height: 1079px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: Web 1920 – 1;
+	--web-view-id: Web_1920__1;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+#Navigation_Bar {
+	position: absolute;
+	width: 1527px;
+	height: 44px;
+	left: 0px;
+	top: 131px;
+	overflow: visible;
+}
+#Base {
+	fill: rgba(120,23,131,1);
+}
+.Base {
+	position: absolute;
+	overflow: visible;
+	width: 1527px;
+	height: 44px;
+	left: 0px;
+	top: 0px;
+}
+#Home {
+	left: 47px;
+	top: 11px;
+	position: absolute;
+	overflow: visible;
+	width: 57px;
+	white-space: nowrap;
+	line-height: 24px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+#SERVICE {
+	left: 588px;
+	top: 13px;
+	position: absolute;
+	overflow: visible;
+	width: 75px;
+	white-space: nowrap;
+	line-height: 20px;
+	margin-top: -1.5px;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 17px;
+	color: rgba(255,255,255,1);
+}
+#FORWARDER_LOGIN {
+	left: 717px;
+	top: 13px;
+	position: absolute;
+	overflow: visible;
+	width: 161px;
+	white-space: nowrap;
+	line-height: 19px;
+	margin-top: -1.5px;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	color: rgba(255,255,255,1);
+}
+#CIRCLE_OFFICER {
+	left: 932px;
+	top: 13px;
+	position: absolute;
+	overflow: visible;
+	width: 144px;
+	white-space: nowrap;
+	line-height: 21px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 17px;
+	color: rgba(255,255,255,1);
+}
+#MANDAL_OFFICER {
+	left: 1130px;
+	top: 13px;
+	position: absolute;
+	overflow: visible;
+	width: 154px;
+	white-space: nowrap;
+	line-height: 21px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 17px;
+	color: rgba(255,255,255,1);
+}
+#CSC_LOGIN {
+	left: 1338px;
+	top: 13px;
+	position: absolute;
+	overflow: visible;
+	width: 95px;
+	white-space: nowrap;
+	line-height: 21px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 17px;
+	
+}
+#Base_o {
+	fill: rgba(130,69,172,1);
+}
+.Base_o {
+	overflow: visible;
+	position: absolute;
+	width: 1527px;
+	height: 200px;
+	left: 0px;
+	top: 880px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#ID123-456-789_textmemailcom_Fi {
+	left: 148px;
+	top: 957px;
+	position: absolute;
+	overflow: visible;
+	width: 113px;
+	white-space: nowrap;
+	line-height: 24px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: rgba(255,255,255,1);
+}
+#Contact_Us_FAQ {
+	left: 468px;
+	top: 957px;
+	position: absolute;
+	overflow: visible;
+	width: 70px;
+	white-space: nowrap;
+	line-height: 24px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: rgba(255,255,255,1);
+}
+#Jobs_Location_Privacy_Policy_T {
+	left: 814px;
+	top: 953px;
+	position: absolute;
+	overflow: visible;
+	width: 122px;
+	white-space: nowrap;
+	line-height: 24px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: rgba(255,255,255,1);
+}
+#CONTACT_US {
+	left: 156px;
+	top: 918px;
+	position: absolute;
+	overflow: visible;
+	width: 66px;
+	white-space: nowrap;
+	line-height: 12px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 10px;
+	color: rgba(255,255,255,1);
+}
+#CUSTOMER_RERVICE {
+	left: 469px;
+	top: 918px;
+	position: absolute;
+	overflow: visible;
+	width: 105px;
+	white-space: nowrap;
+	line-height: 12px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 10px;
+	color: rgba(255,255,255,1);
+}
+#INFORMATION {
+	left: 814px;
+	top: 918px;
+	position: absolute;
+	overflow: visible;
+	width: 71px;
+	white-space: nowrap;
+	line-height: 12px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 10px;
+	color: rgba(255,255,255,1);
+}
+#government-of-india {
+	position: absolute;
+	width: 132px;
+	height: 131px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#NeGS {
+	position: absolute;
+	width: 130.011px;
+	height: 130.011px;
+	left: 1396.989px;
+	top: 0px;
+	overflow: visible;
+}
+#National_e-Governance_Division {
+	left: 96px;
+	top: 32px;
+	position: absolute;
+	overflow: visible;
+	width: 249px;
+	height: 18px;
+	text-align: center;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	color: rgba(119,0,180,1);
+}
+#Information_and__Communication {
+	left: 116px;
+	top: 50px;
+	position: absolute;
+	overflow: visible;
+	width: 180px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Calisto MT;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	color: rgba(0,0,0,1);
+}
+#Digital_India_logo {
+	position: absolute;
+	width: 141px;
+	height: 73px;
+	left: 1223px;
+	top: 23px;
+	overflow: visible;
+}
+#Line_1 {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_1 {
+	overflow: visible;
+	position: absolute;
+	width: 1527.007px;
+	height: 12px;
+	left: 0.5px;
+	top: 445.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Residential_address {
+	position: absolute;
+	width: 1543px;
+	height: 807px;
+	left: -8px;
+	top: 170px;
+	overflow: visible;
+}
+#Get_Your__Residential__Certifi {
+	left: 1144px;
+	top: 204px;
+	position: absolute;
+	overflow: visible;
+	width: 339px;
+	height: 199px;
+	line-height: 60px;
+	margin-top: -10px;
+	text-align: right;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	color: rgba(243,121,38,1);
+}
+a, a:focus, a:active {
+	text-decoration: none;
+	
+}
+
+  a:hover {
+	text-decoration: underline;
+	background-color: blue;
+  }
+

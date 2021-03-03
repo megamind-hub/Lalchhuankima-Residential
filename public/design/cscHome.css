@@ -1,0 +1,13 @@
+h1{
+    text-align:center;
+    background-color:rgb(64, 177, 64);
+    background-size: 5cm;
+    font-size:9ch;
+    height:140px;
+}
+#button {
+    padding: 40px 20px;
+    font-size: 50px;
+    border-radius: 10px;
+    width:100%; 
+}

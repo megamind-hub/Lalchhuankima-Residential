@@ -1,0 +1,25 @@
+.box {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 0;
+    margin: auto;
+    
+  }
+
+h1{
+    text-align: center;
+
+}
+#size{
+    font-size: xx-large;
+}
+.text{
+    text-align: left;
+    line-height: 1.6;
+    word-spacing: 10px;
+}
+.sign{
+    float: right;
+    padding-right: 8px;
+}

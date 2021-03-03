@@ -1,0 +1,12 @@
+h1{
+    text-align: center;
+}
+.box{
+    border: 4px solid;
+    margin: auto;
+    width: 96%;
+}
+.search{
+    text-align: right;
+    margin-top: 8px;
+}
