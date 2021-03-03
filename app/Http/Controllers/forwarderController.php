@@ -16,7 +16,7 @@ class forwarderController extends Controller
        return view('circle_officer', ['circles' => $circles]);
     }
     public function index(){
-        $forwarder = Form::all();
+        $forwarder = Form::where('Forwarder_Status', 'approved');
         return view ('forwarder',['forwarder'=>$forwarder]);
     }
 
@@ -37,7 +37,8 @@ class forwarderController extends Controller
     public function update(Request $request , $id)
     {
         $status= form::findOrFail($id);
-        if($request->has('approve')){
+        if($request->has('approve'))
+        {
             $status->Forwarder_Status = 'approved';
             $status->save();
 
