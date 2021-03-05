@@ -76,7 +76,7 @@
 	<div class="d-grid gap-2 col-6 mx-auto">
   <a href="formpage"><button class="btn btn-primary" id="button" type="button">APPLY</button></a>
   <a href="cscStatus"><button class="btn btn-primary" id="button" type="button">CHECK STATUS</button></a>
-  <button class="btn btn-primary" id="button" type="button">HISTORY</button>
+  
 </div>
 
     <!-- Optional JavaScript; choose one of the two! -->

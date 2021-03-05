@@ -11,7 +11,7 @@
     <title>Mails</title>
   </head>
   <body>
-    
+    <p>{{$body}}</p>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

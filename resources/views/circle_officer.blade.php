@@ -20,7 +20,7 @@
                     </tr>
                 </thead>
                 @foreach($circles as $item)
-               
+                @if($item->Circle_Officer_Status == '')
                 <tbody>
                     <tr>
                     <td>{{$item->id}}</td>
@@ -28,7 +28,7 @@
                     <td>{{$item->Application_no}}</td>
                     <td>{{$item->purpose_For_Residential_Certificate}}</td>
                     </tr>
-                    
+                @endif
                 </tbody>
                 @endforeach
                 </table>

@@ -19,8 +19,9 @@
                     <th scope="col">Purpose</th>
                     </tr>
                 </thead>
+                
                 @foreach($forwarder as $item)
-               
+                @if($item->Forwarder_Status == '')
                 <tbody>
                     <tr>
                     <td>{{$item->id}}</td>
@@ -31,7 +32,10 @@
                     </tr>
                     
                 </tbody>
+                
+                @endif
                 @endforeach
+                
                 </table>
                
 

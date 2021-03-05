@@ -9,9 +9,6 @@ use Response;
 class CircleController extends Controller
 
 {
-    
-    
-    
     public function circleData($id){
         $circleData = Form::findOrFail($id);
         return view('circleData') ->with ('circleData',$circleData);  

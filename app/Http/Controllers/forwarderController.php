@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\Form;
 use DB;
 use Response;
+use Mail;
+use App\Mail\StatusMail;
 
 class forwarderController extends Controller
 {
@@ -14,9 +16,11 @@ class forwarderController extends Controller
     {
        $circles = DB::select('select * from forms where Forwarder_Status = ?', ['approved']);
        return view('circle_officer', ['circles' => $circles]);
+       
     }
+
     public function index(){
-        $forwarder = Form::where('Forwarder_Status', 'approved');
+        $forwarder = Form::all();
         return view ('forwarder',['forwarder'=>$forwarder]);
     }
 
@@ -37,30 +41,30 @@ class forwarderController extends Controller
     public function update(Request $request , $id)
     {
         $status= form::findOrFail($id);
+
         if($request->has('approve'))
         {
             $status->Forwarder_Status = 'approved';
             $status->save();
+            Mail::to($status->email)->send(new StatusMail($status));
 
-            $data= Form::find($id);
-            $applicantName = $data->name;
-            $Forwarder_Status = $data->Forwarder_Status;
+            // $applicantName = $status->name;
+            // $Forwarder_Status = $status->Forwarder_Status;
 
-            $msg="Dear $applicantName, your application form ";
-            $abs=$data->Email;
-            $receiverMail = $abs;
+            // $message="Dear $applicantName, your application form ";
+            // $abs=$status->email;
+            // $receiverMail = $abs;
         
-            $data = array("body"=>$msg);
+            // $data = array("body"=>$message);
     
-            Mail::send('email',$data,function($message) use ($receiverMail,$applicantName)
-            {    $message->to($receiverMail,$applicantName)
-                ->subject("$applicantName YOUR APPLICATION FOR THE RENEWAL OF INNER LINE PASS  HAS BEEN REJECTED BY OFFICER ");
-                $message->from("abc@mail.com","INNER LINE PASS");
-                $message->replyTo("aktricks999@gmail.com");
+            // Mail::send('testMail',$status,function($message) use ($receiverMail,$applicantName)
+            // {    $message->to($receiverMail,$applicantName)
+            //     ->subject("$applicantName Your application for Permanent Residential Address have been Forwarded to the Circle Officer by the Forwarder");
+            //     $message->from("necrofrots@gmail.com","Permanent Residential Address Certificate");
+            //     $message->replyTo("noreply@gmail.com");
     
-            });
-
-            return redirect('/forwarder');
+            // });
+        return redirect('/forwarder');
         }
         elseif($request->has('reject')){
             return view ('reject',['application_forms'=>$status]);
