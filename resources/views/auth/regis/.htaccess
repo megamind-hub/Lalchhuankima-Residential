@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "register"
+AuthUserFile \Users\PREDATOR\Desktop\Roxy\Final\resources\views\auth\regis\.htpasswd
+Require valid-user

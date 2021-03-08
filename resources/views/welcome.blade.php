@@ -55,6 +55,9 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#" style="color:white">HELP</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="YourStat" style="color:white">SEARCH</a>
+                  </li>
                   
                 </ul>
               

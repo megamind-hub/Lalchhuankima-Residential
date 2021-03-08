@@ -46,7 +46,7 @@ class forwarderController extends Controller
         {
             $status->Forwarder_Status = 'approved';
             $status->save();
-            Mail::to($status->email)->send(new StatusMail($status));
+            // Mail::to($status->email)->send(new StatusMail($status));
 
             // $applicantName = $status->name;
             // $Forwarder_Status = $status->Forwarder_Status;

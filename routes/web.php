@@ -79,6 +79,8 @@ Route::get('logout', [LoginController::class,'logout']);
 Route::view('formpage','csc');
 
 Route::get('/search',[StatusController::class,'search']);
+Route::get('/HomeSearch',[StatusController::class,'HomeSearch']);
+Route::view('YourStat','YourStat');
 
 Route::get('cscStatus',[StatusController::class,'index']);
 Route::get('forwarder', [forwarderController::class,'index']);

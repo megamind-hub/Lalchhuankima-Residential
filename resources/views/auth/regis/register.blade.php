@@ -67,7 +67,7 @@
                         <div style="margin-left:160px;">
                             <label>Select Role: </label>
                             <select>
-                                <option class="csc">CSC</option>
+                                <option class="csc">CSCS</option>
                                 <option class="forwarder">FORWARDER</option>
                                 <option class="circle_officer">CIRCLE OFFICER</option>
                                 <option class="mandal_officer">MANDAL OFFICER</option>

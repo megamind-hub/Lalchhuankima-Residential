@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 use PDF;
 use Illuminate\Http\Request;
 use App\Models\Form;
+use Response;
+
+
 
 class StatusController extends Controller
 {
@@ -18,6 +21,20 @@ class StatusController extends Controller
 
         return view ('search',['name'=>$name]);
     }
+    // public function HomeSearch(){
+    //     $search_text = $_GET['search'];
+    //     $name = Form::where('name','LIKE', '%'.$search_text.'%')->get();
+
+    //     return view ('search',['name'=>$name]);
+    // }
+    public function HomeSearch(){
+        $search_text = $_GET['search'];
+        $Application_no = Form::where('Application_no','like','%'.$search_text.'%')->get();
+         return view ('view',['Application_no'=>$Application_no]);
+         
+       
+    }
+
     public function mypdf($id){
         $data =Form:: find($id);
         $pdf = PDF::loadView('acknowledge',compact('data'));

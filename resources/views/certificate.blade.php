@@ -60,19 +60,26 @@ h2{
   text-align:right;
 }
 p u:after {
-  content: "\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0"; 
+  content: "\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0"; 
 }
 p u:before {
-  content: "\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0"; 
+  content: "\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0"; 
 }
 #name{
-  margin-left:70%;
+  margin-left:55%;
 }
 #lal{
-  float:right;
+  margin-left:3%;
 }
 .dates{
   font-weight:600;
+}
+#sign{
+  margin-left:56%;
+}
+#print{
+  width:80px;
+  height:80px;
 }
 
 
@@ -80,6 +87,8 @@ p u:before {
     <title>Residential Address Certificate</title>
   </head>
   <body>
+
+  
     <div class="box">
       
     <h1>OFFICE OF THE DEPUTY COMMISSIONER<br>AIZAWL DISTRICT:AIZAWL<br>(JUDICIAL BRANCH)</h1>
@@ -97,7 +106,7 @@ p u:before {
     <br>
     <br>
 
-    <p class="para">This is to certify that Mr/Ms/Shri <u id="namess"><b>{{$certificate->name}}</b></u><br> Daughter/Son of <u><b>{{$certificate->father_Name}}</b></u>  is  residing at <u><b>{{$certificate->present_Address}}</b></u>in <br><u><b>{{$certificate->district}}</b></u> District in the State of<b>{{$certificate->state}}</p>
+    <p class="para">This is to certify that Mr/Ms/Shri <u id="namess"><b>{{$certificate->name}}</b></u><br> Daughter/Son of <u><b>{{$certificate->father_Name}}</b></u>  is  residing at <u><b>{{$certificate->present_Address}}</b></u>in <br><u><b>{{$certificate->district}}</b></u> District in the State of <b>{{$certificate->state}}</p>
 
     <br>
     <br>
@@ -107,7 +116,7 @@ p u:before {
     <br>
     <div class="place">
      <label for="place" id="place">Place: {{$certificate->district}}</label>
-     <label for="sign" id="sign" style="float:right">Signature: <img onclick="window.print()" src="/css/signature.png" alt="signature"> </label>
+     <label for="sign" id="sign" >Signature: <img id="sig" onclick="window.print()" src="/css/signature.png" alt="signature"> </label>
      </div>
      <div class="dates">
      <label for="dates" id="dates">Date: {{$certificate->date}}</label>
